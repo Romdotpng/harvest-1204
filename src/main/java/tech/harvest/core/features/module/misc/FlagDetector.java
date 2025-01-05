@@ -25,7 +25,7 @@ public class FlagDetector extends Module {
     @Override
     public void onGetPacket(GetPacketEvent event) {
         if (event.getPacket() instanceof PlayerPositionLookS2CPacket) {
-
+            if (mc.player != null) {
             double x = mc.player.getX();
             double y = mc.player.getY();
             double z = mc.player.getZ();
@@ -44,5 +44,6 @@ public class FlagDetector extends Module {
                 }
             }
         }
+      }
     }
 }
