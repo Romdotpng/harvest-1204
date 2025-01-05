@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "harvest-client",
+	"version": "${version}",
+	"name": "Harvest Client",
+	"description": "utility mod for only sigmas",
+	"authors": [
+		"Dream",
+		"hypinohaizin"
+	],
+	"contact": {
+		"discord": "https://discord.gg/BWVjzX97Z5"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/harvest-client/icon.png",
+	"environment": "*",
+	"mixins": [
+		"harvest-client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
